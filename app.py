@@ -118,7 +118,7 @@ def get_course_ids_sniper_mode(jadwals, idx_value, cookie_str, log_placeholder, 
         except Exception as e:
              status_text.error(f"⚠️ Percobaan #{attempt}: Koneksi Error ({str(e)}). Retrying...")
         
-        # Jeda sedikit agar CPU server Streamlit tidak meledak (0.5 detik cukup agresif tapi aman)
+        # Jeda sedikit agar CPU server Streamlit tidak meledak (0.05 detik cukup agresif tapi aman)
         if len(cached_ids) < len(jadwals):
             time.sleep(0.5) 
             
